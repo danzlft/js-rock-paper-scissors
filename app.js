@@ -42,3 +42,59 @@
 //             return "Scissors";
 //     }
 // }
+
+
+// number = Number(prompt("Enter a number: "));
+
+
+const body = document.body;
+body.append();
+
+const submitDiv = document.createElement("div");
+submitDiv.className = "submit-div";
+body.append(submitDiv);
+
+const label = document.createElement("label");
+label.id = "myLabel";
+label.textContent = "Input your name: ";
+submitDiv.append(label);
+
+//input box
+const submitInput = document.createElement("input");
+submitInput.type = "input", submitInput.id = "myText";
+submitDiv.append(submitInput);
+
+//input button
+const submitBtn = document.createElement("button");
+submitBtn.type = "button", submitBtn.id = "myButton";
+submitBtn.textContent = "submit";
+submitDiv.append(submitBtn);
+
+
+// let userName;
+// document.getElementById("myButton").onclick = function () {
+//     userName = document.getElementById("myText").value;
+//     console.log(userName);
+// }
+
+//change the label content to userInput
+//get document.className of label
+//return label with .value
+//update the textContent of label (label.textContent = userName)
+
+
+
+//Easy way of user input
+const userPrompt = window.prompt("Input your name: ");
+console.log(userPrompt);
+
+
+
+
+let userName;
+document.getElementById("myButton").onclick = function () {
+    userName = document.getElementById("myText").value;
+    console.log(userName);
+    document.getElementById("myLabel").textContent = `Hello ${userName}!`;
+}
+
