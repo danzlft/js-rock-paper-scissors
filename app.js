@@ -47,28 +47,28 @@
 // number = Number(prompt("Enter a number: "));
 
 
-const body = document.body;
-body.append();
+// const body = document.body;
+// body.append();
 
-const submitDiv = document.createElement("div");
-submitDiv.className = "submit-div";
-body.append(submitDiv);
+// const submitDiv = document.createElement("div");
+// submitDiv.className = "submit-div";
+// body.append(submitDiv);
 
-const label = document.createElement("label");
-label.id = "myLabel";
-label.textContent = "Input your name: ";
-submitDiv.append(label);
+// const label = document.createElement("label");
+// label.id = "myLabel";
+// label.textContent = "Input your name: ";
+// submitDiv.append(label);
 
-//input box
-const submitInput = document.createElement("input");
-submitInput.type = "input", submitInput.id = "myText";
-submitDiv.append(submitInput);
+// //input box
+// const submitInput = document.createElement("input");
+// submitInput.type = "input", submitInput.id = "myText";
+// submitDiv.append(submitInput);
 
-//input button
-const submitBtn = document.createElement("button");
-submitBtn.type = "button", submitBtn.id = "myButton";
-submitBtn.textContent = "submit";
-submitDiv.append(submitBtn);
+// //input button
+// const submitBtn = document.createElement("button");
+// submitBtn.type = "button", submitBtn.id = "myButton";
+// submitBtn.textContent = "submit";
+// submitDiv.append(submitBtn);
 
 
 // let userName;
@@ -85,16 +85,34 @@ submitDiv.append(submitBtn);
 
 
 //Easy way of user input
-const userPrompt = window.prompt("Input your name: ");
-console.log(userPrompt);
+// const userPrompt = window.prompt("Input your name: ");
+// console.log(userPrompt);
+
+ 
+// let userName;
+
+// document.getElementById("myButton").onclick = function () {
+//     userName = document.getElementById("myText").value;
+//     console.log(userName);
+//     document.getElementById("myLabel").textContent = `Hello ${userName}!`;
+// }
+
+// let age = Number(window.prompt("Input your age: "));
+// age += 1;
+// console.log(age);
+
+// let age = window.prompt("Input your age:");
+// age = Number.parseInt(age);
+// age += 1;
+// console.log(age);
+
+// let round = 2.999;
+// round = Math.round(round); //standard rounding math
+// round = Math.ceil(round); //always round num up
+// round = Math.floor(round); //always round num down
+// console.log(round);
 
 
 
-
-let userName;
-document.getElementById("myButton").onclick = function () {
-    userName = document.getElementById("myText").value;
-    console.log(userName);
-    document.getElementById("myLabel").textContent = `Hello ${userName}!`;
-}
-
+//Practice Program: Get the Hypotenuse of a right side angle triangle the user inputs
+//FORMULA: c = √(a² + b²)
