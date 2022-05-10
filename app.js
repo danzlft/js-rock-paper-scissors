@@ -116,3 +116,83 @@
 
 //Practice Program: Get the Hypotenuse of a right side angle triangle the user inputs
 //FORMULA: c = √(a² + b²)
+
+
+const body = document.body;
+const container = document.createElement("div");
+container.className = "div-container";
+body.append(container);
+
+const aLabel = document.createElement("label");
+aLabel.textContent = "Side A:";
+aLabel.id = "aLabel";
+container.append(aLabel);
+
+const aInput = document.createElement("input");
+aInput.id = "aInput";
+container.append(aInput);
+
+const bLabel = document.createElement("label");
+bLabel.id = "bLabel";
+bLabel.textContent = "Side B:";
+container.append(bLabel);
+
+const bInput = document.createElement("input");
+bInput.id = "bInput";
+container.append(bInput);
+
+const myButton = document.createElement("button");
+myButton.id = "submitButton";
+myButton.textContent = "submit";
+container.append(myButton);
+
+const cLabel = document.createElement("label");
+cLabel.id = "cLabel";
+container.append(cLabel);   
+
+let a;
+let b;
+let c;
+
+document.getElementById("submitButton").onclick = function () {
+    a = document.getElementById("aInput").value;
+    a = Number(a);
+
+    b = document.getElementById("bInput").value;
+    b = Number(b);
+
+    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+    document.getElementById("cLabel").textContent = `Side C: ${c}`;
+    console.log(c);
+}
+
+c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+
+//prompt user for input and update h1 
+
+
+const divContainer = document.createElement("div");
+divContainer.className = "div-container";
+body.append(divContainer);
+
+const mainP = document.createElement("p");
+mainP.id = "main-p";
+mainP.textContent = "Input a name:";
+divContainer.append(mainP);
+
+const nameInput = document.createElement("input");
+nameInput.id = "name-input";
+divContainer.append(nameInput);
+
+const submitButton = document.createElement("button");
+submitButton.id = "submit-button";
+submitButton.textContent = "submit";
+divContainer.append(submitButton);
+
+let mainInput;
+document.getElementById("submit-button").onclick = function () {
+    mainInput = document.getElementById("name-input").value;
+    document.getElementById("main-p").textContent = `Hello ${mainInput}!`;
+
+};

@@ -4,37 +4,10 @@
     box-sizing: border-box;
 }
 
-.submit-div {
-    padding-top: 20px;
+/* .div-container {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    height: 7rem;
-}
-
-#myButton {
-    padding: 8px 13px;
-    border-radius: 15px;
-    border: none;
-    background-color: #71caf3;
-    color: #ffff;
-    font-size: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-#myButton:hover {
-    color: #f0f0f0;
-    background-color: #4db0dd;
-    box-shadow: 2px 5px #2587b418;
-}
-
-#myText {
-    border: none;
-    background: #f0f0f0;
-    border-radius: 5px;
-    padding: 6px;
-}
+    height: 40vh;
+} */
