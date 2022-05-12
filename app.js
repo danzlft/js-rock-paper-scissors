@@ -198,22 +198,76 @@
 // };
 
 
-let count = 0;
-//decrease = count -= 1;
-//reset = count;
-//increase = count += 1;
+// let count = 0;
+// //decrease = count -= 1;
+// //reset = count;
+// //increase = count += 1;
 
-document.getElementById("decrease-btn").onclick = function () {
-    count -= 1;
-    document.getElementById("counter").textContent = count;
-}
+// document.getElementById("decrease-btn").onclick = function () {
+//     count -= 1;
+//     document.getElementById("counter").textContent = count;
+// }
 
-document.getElementById("reset-btn").onclick = function () {
-    count = 0;
-    document.getElementById("counter").textContent = count;
-}
+// document.getElementById("reset-btn").onclick = function () {
+//     count = 0;
+//     document.getElementById("counter").textContent = count;
+// }
 
-document.getElementById("increase-btn").onclick = function () {
-    count += 1;
-    document.getElementById("counter").textContent = count;
-}
+// document.getElementById("increase-btn").onclick = function () {
+//     count += 1;
+//     document.getElementById("counter").textContent = count;
+// }
+
+
+// let x; 
+// let y; 
+// let z;
+
+
+// document.getElementById("rollBtn").onclick = function () {
+//     x = Math.floor(Math.random() * 6) + 1;
+//     x = document.getElementById("xLabel").textContent = `Dice I: ${x}`;
+
+//     y = Math.floor(Math.random() * 6) + 1;
+//     y = document.getElementById("yLabel").textContent = `Dice II: ${y}`;
+
+//     z = Math.floor(Math.random() * 6) + 1;
+//     z = document.getElementById("zLabel").textContent = `Dice III: ${z}`;
+// }
+
+
+// let fullName = "宮水 三橋";
+// let firstName = fullName.slice(0, 5);
+// let lastName = fullName.slice(6);
+
+// let firstName = fullName.slice(fullName.indexOf(" ") + 1);
+// console.log(firstName);
+
+// let lastName = fullName.slice(0, fullName.indexOf(" "));
+// console.log(lastName);
+
+
+// let userName = "    Akari   ";
+
+// let letterName = userName.charAt(4)
+// letterName = letterName.toUpperCase();
+// console.log(letterName);
+
+
+//Method Chaining//
+// let letterName = userName.toUpperCase().trim();
+// console.log(letterName);
+
+// let phoneNum = "2325-2342-2523";
+// phoneNum = phoneNum.replaceAll("-", "/");
+// console.log(phoneNum);
+
+
+
+const body = document.body;
+body.append();
+
+const divContainer = document.createElement("div");
+divContainer.className = "div-container";
+divContainer.textContent = "hello";
+body.append(divContainer);
