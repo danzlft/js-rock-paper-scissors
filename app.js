@@ -262,12 +262,87 @@
 // phoneNum = phoneNum.replaceAll("-", "/");
 // console.log(phoneNum);
 
+// const body = document.body;
+// body.append();
+
+// const navContainer = document.createElement("div");
+// navContainer.className = "nav-container";
+// body.append(navContainer);
+
+// const logo = document.createElement("div");
+// logo.className = "nav-logo";
+// logo.textContent = "死";
+// navContainer.append(logo);
+
+// const navLinks = document.createElement("ul");
+// navLinks.className = "ul-container";
+// navContainer.append(navLinks);
+
+// const homeLi = document.createElement("li");
+// homeLi.id = "home-li";
+// homeLi.textContent = "home";
+// navLinks.append(homeLi);
+
+// const aboutLi = document.createElement("li");
+// aboutLi.id = "about-li";
+// aboutLi.textContent = "about";
+// navLinks.append(aboutLi);
+
+// const moreLi = document.createElement("li");
+// moreLi.id = "more-li";
+// moreLi.textContent = "more";
+// navLinks.append(moreLi);
+
+// const contactBtn = document.createElement("button");
+// contactBtn.className = "contact-button";
+// contactBtn.textContent = "contact";
+// navContainer.append(contactBtn);
 
 
-const body = document.body;
-body.append();
+// let cashInWallet = 15;
+// let order;
 
-const divContainer = document.createElement("div");
-divContainer.className = "div-container";
-divContainer.textContent = "hello";
-body.append(divContainer);
+// while (cashInWallet >= 10) {
+//     order = document.write("BBQ CHICKEN!<br>");
+//     cashInWallet -= 1; 
+// }
+// order = document.write("water...");
+
+
+// let cash = 9;
+// let orderList;
+
+// if(cash >= 10) {
+//     orderList = document.write("CHICKEN <br>");
+// }else {
+//     orderList = document.write("water...");
+// }
+
+// let iceCream = 6; 
+// if(iceCream <= 5) {
+//     alert("Ice Cream is running low!");
+// } else {
+//     alert("Enjoy your Ice Cream!");
+// }
+
+
+let i = 0;
+const birthName = "Joe";
+
+while(i < 2) {
+    document.write("Happy Birthday to you.<br>");
+    i += 1;
+}
+document.write("Happy Birthday dear " + birthName + ",<br>");
+document.write("Happy Birthday to you.");
+
+
+// let word = "bottles";
+// let count = 99;
+// while (count > 0) {
+//  console.log(count + " " + word + " of beer on the wall");
+//  console.log(count + " " + word + " of beer,");
+//  console.log("Take one down, pass it around,");
+//  count = count - 1;
+// }
+// console.log("No more " + word + " of beer on the wall.");
