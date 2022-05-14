@@ -346,3 +346,12 @@ document.write("Happy Birthday to you.");
 //  count = count - 1;
 // }
 // console.log("No more " + word + " of beer on the wall.");
+
+let inStock;
+let onSale;
+
+if(inStock == true) {
+    if(onSale == true) {
+        alert("Poggers!");
+    }
+}
