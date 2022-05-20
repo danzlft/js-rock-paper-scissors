@@ -326,15 +326,15 @@
 // }
 
 
-let i = 0;
-const birthName = "Joe";
+// let i = 0;
+// const birthName = "Joe";
 
-while(i < 2) {
-    document.write("Happy Birthday to you.<br>");
-    i += 1;
-}
-document.write("Happy Birthday dear " + birthName + ",<br>");
-document.write("Happy Birthday to you.");
+// while(i < 2) {
+//     document.write("Happy Birthday to you.<br>");
+//     i += 1;
+// }
+// document.write("Happy Birthday dear " + birthName + ",<br>");
+// document.write("Happy Birthday to you.");
 
 
 // let word = "bottles";
@@ -347,11 +347,69 @@ document.write("Happy Birthday to you.");
 // }
 // console.log("No more " + word + " of beer on the wall.");
 
-let inStock;
-let onSale;
+// let inStock;
+// let onSale;
 
-if(inStock == true) {
-    if(onSale == true) {
-        alert("Poggers!");
-    }
-}
+// if(inStock == true) {
+//     if(onSale == true) {
+//         alert("Poggers!");
+//     }
+// }
+
+
+// const chevy = { 
+//     make: "Chevy",
+//     model: "Bel Air",
+//     year: 1957, 
+//     color: "red",
+//     passengers: 2,
+//     convertible: false,
+//     mileage: 2022 //no comma for the last property value
+//    };
+
+// console.log(chevy);
+
+
+// const taxi = { 
+//     make: "Webville Motors",
+//     model: "Taxi",
+//     year: 1955,
+//     color: "yellow",
+//     passengers: 4,
+//     convertible: false,
+//     mileage: 281341
+//    };
+
+//    function prequal(car) {
+//     if (car.mileage > 10000) {
+//     return false;
+//     } else if (car.year > 1960) {
+//     return false;
+//     }
+//     return true;
+//    }
+
+//    let worthALook = prequal(taxi);
+//    if (worthALook) {
+//     console.log("You gotta check out this " + taxi.make + " " + taxi.model);
+//    } else {
+//     console.log("You should really pass on the " + taxi.make + " " + taxi.model);
+//    }
+
+
+// const fido = {
+//     name: "Fido",
+//     weight: 40,
+//     breed: "Mixed",
+//     loves: "walks"
+// };
+
+// function loseWeight(dog, amount) {
+//     dog.weight -= amount;
+// }
+// loseWeight(fido, 15)
+
+// console.log(`Your dog ${fido.name} now weighs ${fido.weight} pounds`);
+
+
+
