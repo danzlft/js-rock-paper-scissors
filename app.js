@@ -433,16 +433,224 @@
 // (function () { console.log("Hello!"); })(); //immediately invoked functions expressions
 
 
-const fido = {
-    name: "Fido",
-    weight: 48,
-    breed: "Mixed",
-    loves: "walks"
+// const fido = {
+//     name: "Fido",
+//     weight: 48,
+//     breed: "Mixed",
+//     loves: "walks"
+// }
+
+// function loseWeight (dog, amount) {
+//     dog.weight -= amount;
+// }
+// loseWeight(fido, 10);
+
+// console.log(`${fido.name} now weighs ${fido.weight} pounds`);
+
+// function makeCar() {
+//     const makes = ["Chevy", "GM", "Fiat", "Webville Motors", "Tucker"];
+//     const models = ["Cadillac", "500", "Bel-Air", "Taxi", "Torpedo"];
+//     const years = [1955, 1957, 1948, 1954, 1961];
+//     const colors = ["red", "blue", "tan", "yellow", "white"];
+//     const convertible = [true, false];
+
+//     let rand1 = Math.floor(Math.random() * makes.length);
+//     let rand2 = Math.floor(Math.random() * models.length);
+//     let rand3 = Math.floor(Math.random() * years.length);
+//     let rand4 = Math.floor(Math.random() * colors.length);
+//     let rand5 = Math.floor(Math.random() * 5) + 1;
+//     let rand6 = Math.floor(Math.random() * 2);
+
+//     const car = {
+//         make: makes[rand1],
+//         model: models[rand2],
+//         year: years[rand3],
+//         color: colors[rand4],
+//         passengers: rand5,
+//         convertible: convertible[rand6],
+//         mileage: 0,
+//         drive: function () {
+//             alert("Broom!");
+//         }
+//     }
+//     return car;
+// }
+// function displayCar(car) {
+//     console.log(`Your new car is a ${car.year} ${car.make} ${car.model}`);
+// }
+
+// const runCar = makeCar();
+// displayCar(runCar);
+
+
+// const fiat = { 
+//     make: "Fiat",
+//     model: "500",
+//     year: 1957, 
+//     color: "Medium Blue",
+//     passengers: 2,
+//     convertible: false,
+//     mileage: 88000,
+//     startOn: false,
+//     start: function () {
+//         this.startOn = true;
+//     },
+//     stop: function () {
+//         this.startOn = false;
+//     },
+//     drive: function () {
+//         this.startOn ? alert("Zoom zoom!") : alert("You need to start your engines");
+//     }
+    // drive: function () {
+    //     if (this.startOn) {
+    //         alert("Zoom zoom");
+    //     } else {
+    //         alert("You need to start your engines");
+    //     }
+    // }
+// }
+
+// console.log(fiat.drive());
+// console.log(fiat.start());
+
+//this.
+// const test = {
+//     prop: 42,
+//     randomFunc: function() {
+//         return this.prop;
+//     }
+// }
+// console.log(test.randomFunc());
+
+// const eightBall = {
+//     index: 0, 
+//     advice: ["yes", "no", "maybe", "not a chance"],
+//     shake: function() { 
+//         this.index = this.index + 1;
+//         if (this.index >= this.advice.length) {
+//         this.index = 0;
+//         }
+//     },
+//     look: function() {
+//     return this.advice[this.index];
+//     }
+// }
+// eightBall.shake();
+// console.log(eightBall.look());
+// console.log(eightBall.look());
+// console.log(eightBall.look());
+
+
+//ternary operator 
+/* 
+    let i = 5;
+    i < 20 ? console.log("true") : console.log("false");
+
+    standard conditional 
+    let i = 5;
+    if (i < 20) {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+*/
+
+const piano = {
+    make: "Steinway",
+    model: "Model S",
+    year: 1930,
+    isUsed: false
+    // condition: function () {
+    //     if(this.isUsed) {
+    //         this.isUsed = true;
+    //     }
+    // }
 }
 
-function loseWeight (dog, amount) {
-    dog.weight -= amount;
-}
-loseWeight(fido, 10);
-console.log(`${fido.name} now weighs ${fido.weight} pounds`);
 
+console.log(piano["ma" + "ke"]);
+console.log(piano.model);
+
+// for(let model in piano) {
+//     console.log(`${model}: ${piano[model]}`);
+// }
+
+
+// piano.restore = function () {
+//     alert("Buy it!");
+// }
+
+// console.log(piano);
+
+
+let cadi = { 
+    make: "GM",
+    model: "Cadillac",
+    year: 1955,
+    color: "tan",
+    passengers: 5,
+    convertible: false,
+    mileage: 12892,
+    started: false,
+    start: function () {
+        this.started = true;
+    },
+    stop: function () {
+        this.started = false;
+    },
+    drive: function () {
+        if (this.started) {
+            alert(`${this.make} ${this.model} goes zoom zoom!`);
+        } else {
+            alert("You need to start your engine first");
+        }
+    }
+};
+
+let chevy = { 
+    make: "Chevy",
+    model: "Bel Air",
+    year: 1957, 
+    color: "red",
+    passengers: 2,
+    convertible: false,
+    mileage: 1021,
+    started: false,
+    start: function () {
+        this.started = true;
+    },
+    stop: function () {
+        this.started = false;
+    },
+    drive: function () {
+        if (this.started) {
+            alert(`${this.make} ${this.model} goes zoom zoom!`);
+        } else {
+            alert("You need to start your engine first");
+        }
+    }
+};
+
+let taxi = { 
+    make: "Webville Motors",
+    model: "Taxi",
+    year: 1955,
+    color: "yellow",
+    passengers: 4,
+    convertible: false,
+    mileage: 281341,
+    started: false,
+    start: function () {
+        this.started = true;
+    },
+    stop: function () {
+        this.started = false;
+    },
+    drive: function () {
+        if (this.started) {
+            alert(`${this.make} ${this.model} goes zoom zoom!`);
+        } else {
+            alert("You need to start your engine first");
+        }
+    }
+};
