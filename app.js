@@ -413,3 +413,36 @@
 
 
 
+// const x = null;
+// console.log(typeof null);
+
+
+// const rando = [1,2,3] === typeof {val: '1', val: '2', val: '3'};
+// console.log(rando);
+
+
+// const lia = 5;
+// console.log(lia < 20 ? true : false);
+
+//octal literal in strict mode
+// "use strict";
+// let oct = 0o054;
+// console.log(oct);
+
+
+// (function () { console.log("Hello!"); })(); //immediately invoked functions expressions
+
+
+const fido = {
+    name: "Fido",
+    weight: 48,
+    breed: "Mixed",
+    loves: "walks"
+}
+
+function loseWeight (dog, amount) {
+    dog.weight -= amount;
+}
+loseWeight(fido, 10);
+console.log(`${fido.name} now weighs ${fido.weight} pounds`);
+
