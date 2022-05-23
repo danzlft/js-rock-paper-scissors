@@ -568,8 +568,8 @@ const piano = {
 }
 
 
-console.log(piano["ma" + "ke"]);
-console.log(piano.model);
+console.log(piano["ma" + "ke"]); //bracket notation
+console.log(piano.model); //dot. notation
 
 // for(let model in piano) {
 //     console.log(`${model}: ${piano[model]}`);
@@ -581,7 +581,6 @@ console.log(piano.model);
 // }
 
 // console.log(piano);
-
 
 let cadi = { 
     make: "GM",
